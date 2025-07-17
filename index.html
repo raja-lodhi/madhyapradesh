@@ -1,86 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="icon" href="logo.jpeg" type="jpeg">
     <title>Madhyapradesh:Heart of the India</title>
 </head>
 <style>
      header {
             position: fixed;
-            top: 0;
-            right: 0;
+            justify-content: space-between;
+            top:0;
             left: 0;
+            
+            width: 100%;
             background-color: rgb(216, 235, 245);
             padding: 5px;
             display: flex;
-            align-items: center;
+            right: 70px;
+           justify-content: space-between;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             z-index: 2;
             border-bottom: 2px solid black;
              border-top: 2px solid black;
 
         }
-         .nav-buttons {
-            margin-left: 200px;
+         .tum {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-between;
+                padding-inline-end: 20px;
+                gap: 40px;
         }
 
-        .nav-buttons a {
+        .tum a {
             text-decoration: none;
-           margin: 50px;
+          
         }
-
-        .nav-buttons button {
+         .tum button {
             padding: 10px  20px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 10px;
         }
+
+      
         #background{
-                position: fixed;
-                top: 30;
+            position: fixed;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url(bg.jpeg) no-repeat center center fixed;
+            background: url(bg.jpeg)no-repeat center center fixed ;
             background-size: cover;
             opacity: 0.5; 
-            z-index: 0;
+            z-index: 1;
             font-size: 50px;
-            
-
 
         }
         #content{
-      position: relative;
-      z-index: 1;
-      margin-top:90px
-      
-      
-    
+            position: relative;
+            z-index: 0;
         }
-    ol{
-        font-size:20px;
-    }
+            .marquee-container {
+            padding-top: 100px;
+}
+        ol{
+            font-size: 20px;
+        }
+        #hii
+        {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+        }
 </style>
 <body >
     <header >
-         <img style="margin-left:80px;margin-right: 70px;" src="ram.png" alt="mp logo"width="60px">
-        <h1>Madhyapradesh</h1>
-         <div class="nav-buttons">
-            <a href="#"><button>Home</button></a>
-            <a href="place.html"><button>Place</button></a>
+        <div id="hii">  <img  src="ram.png" alt="mp logo"width="60px"></div>
+        <div><h1>Madhyapradesh</h1></div>
+        
+         <div class="tum">
+            <a hre="index.html"><button>Home</button></a>
+            <a href="index2.html"><button>Place</button></a>
             <a href="festival.html"><button>Festival</button></a>
             <a href="food.html"><button>Food</button></a>
         </div>
 
     </header>
-    <marquee behavior="" direction="right">Introduction: Madhya Pradesh is  the "Heart of India❤️</marquee>
     <div id="background"></div>
-    <div id="content">
-         <marquee behavior="alternate" direction="left" style="font-size: 40px;">🍁Introduction: Madhya Pradesh is  the "❤️Heart of India❤️".  </marquee>
-        </div>
+   <div id="content">
+    <div class="marquee-container">
+        <marquee behavior="alternate" direction="left" style="font-size: 40px;">
+            🍁Introduction: Madhya Pradesh is the "❤️Heart of India❤️".
+        </marquee>
+    </div>
+</div>
 
         <div style="width: 60%; text-align: justify;">
             <h1 >🌟 Politics & Leadership</h1>
