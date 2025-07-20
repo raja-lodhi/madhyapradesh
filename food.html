@@ -1,125 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 </head>
-<style>
-    header{
-        text-align: center;
-        background: fixed;
-        background-color: black;
-       height: 60px;
-        margin-top: -7px;
-        margin-left: -9px;
-        margin-right: -9px;
-        color: aliceblue;
-        padding-top: 15px;
-    }
-    
-    
-    button{
-        cursor: pointer;
-        border-radius: 10%;
-       background-color: rgb(193, 184, 232);
-        font-size: 20px;
+ <style>
+     header {
+            position: fixed;
+            justify-content: space-between;
+            top:0;
+            left: 0;
+            
+            width: 100%;
+            background-color: rgb(216, 235, 245);
+            padding: 5px;
+            display: flex;
+            right: 70px;
+           justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 2;
+            border-bottom: 2px solid black;
+             border-top: 2px solid black;
 
-    }
-   #back{
-     width: 100%;
-     height: 100%;
-    background: url(food.jpeg );
-    background-size: cover;
-    position:fixed;
-    opacity: 0.4;
-    left: 0;
-    right: 0;
-    top: 0;
-    
-    
-   }
-   #food{
-    position: relative;
-    border: 4px solid black;
-    top: 40px;
-    background-color: aliceblue;
-    opacity: 0.7;
-    padding: 10px;
-    border: dotted;
-   font-size:19px;
-    text-align: justify;
-    
-    
-   }
-   #poha{
-    border: 6px solid black;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    display: inline;
-    margin-top: 30px;
-   }
-   #bafla{
-    position: relative;
-    border: 4px solid black;
-    top: 60px;
-    background-color: aliceblue;
-    opacity: 0.7;
-    padding: 10px;
-    border: dotted;
-   font-size:19px;
-    text-align: justify;
+        }
+         .tum {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-between;
+                padding-inline-end: 20px;
+                gap: 40px;
+        }
 
-   }
-   #dal{
-     border: 6px solid black;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
-    display: inline;
-    margin-top: 30px;
-    display: inline;
-    margin-left: 1028px;
+        .tum a {
+            text-decoration: none;
+          
+        }
+         .tum button {
+            padding: 10px  20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
 
-   }
-   #khorma{
-     position: relative;
-    border: 4px solid black;
-    top: 60px;
-    background-color: aliceblue;
-    opacity: 0.7;
-    padding: 10px;
-    border: dotted;
-   font-size:19px;
-    text-align: justify;
-   }
-   #patties{
-     border: 6px solid black;
-    border-radius: 60%;
-    display: inline;
-    margin-top: 30px;
-       }
-       a{
-        margin-top: 10px;
-       }
+      
+        #background{
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(food.jpeg)no-repeat center center fixed ;
+            background-size: cover;
+            opacity: 0.5; 
+           
+            font-size: 50px;
+
+        }
+        #content{
+            position: relative;
+            z-index: 0;
+        }
+            .marquee-container {
+            padding-top: 100px;
+}
+        ol{
+            font-size: 20px;
+        }
+        #hii
+        {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+        }
+            #food {
+                display: flex;
+            justify-items: center;
+            background-color: aliceblue;
+            opacity: 0.8;
+            border: 4px dotted black;
+            width: 100%;
+            font-size: 18px;
+            text-align: justify;
+            border-radius: 10px;
+        }
+        #bafla{
+            display: flex;
+            justify-items: center;
+            background-color: aliceblue;
+            opacity: 0.8;
+            border: 4px dotted black;
+            width: 100%;
+            font-size: 18px;
+            text-align: justify;
+            border-radius: 10px;
+        }
+         #khorma{
+            
+            display: flex;
+            background-color: aliceblue;
+            opacity: 0.8;
+            border: 4px dotted black;
+            width: 100%;
+            font-size: 18px;
+            text-align: justify;
+            justify-content: center;
+            border-radius: 10px;
+        }
 </style>
-<body>
-    <header><h1 style="display: inline;"><u>MADHYA PRADESH </u> &nbsp; 🙏💖<u>SPACIAL DISH</u>💖🙏</h1></center></header>
-    
-    <div id="back"></div>
+<body >
+    <header >
+        <div id="hii">  <img  src="ram.png" alt="mp logo"width="60px"></div>
+        <div><h1>Madhyapradesh</h1></div>
+        
+         <div class="tum">
+            <a href="index.html"><button>Home</button></a>
+            <a href="index2.html"><button>Place</button></a>
+            <a href="festival.html"><button>Festival</button></a>
+            <a href="food.html"><button>Food</button></a>
+        </div>
+
+    </header>
+    <div id="background"></div>
+   <div id="content">
+    <div class="marquee-container">
+        <marquee behavior="alternate" direction="left" style="font-size: 40px;">
+            🍁Madhya Pradesh :-"❤️SPECIAL DISH❤️"
+        </marquee>
+    </div>
+</div>
+ 
     <div id="food">
-        <img id="poha" src="poha.jpeg" alt="poha" width="330" >
-        <p style="margin-left: 26%; margin-top: -240px; ">
-           <b><u>Poha-jalebi:-</u></b>  is a beloved breakfast combination that truly captures the spirit of Madhya Pradesh. The soft, flavorful poha, garnished with fresh coriander, sev, and a squeeze of lemon, pairs perfectly with the sweet, crispy jalebi, creating a unique harmony of taste. This dish is not just food—it’s an emotion for locals, often enjoyed with a hot cup of tea on bustling street corners. Whether it’s a regular morning or a festive occasion, poha-jalebi brings people together, reflecting the warmth and hospitality of the region. Its simplicity, affordability, and unforgettable taste make it truly. <br><br>
+        <div style="padding: 20px;"><img style=" border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;" src="poha.jpeg" alt="poha" width="430px" >
+        </div>
+        <div style="padding: 10px;">
+        <p> <b><u>Poha-jalebi:-</u></b>  is a beloved breakfast combination that truly captures the spirit of Madhya Pradesh. The soft, flavorful poha, garnished with fresh coriander, sev, and a squeeze of lemon, pairs perfectly with the sweet, crispy jalebi, creating a unique harmony of taste. This dish is not just food—it’s an emotion for locals, often enjoyed with a hot cup of tea on bustling street corners. Whether it’s a regular morning or a festive occasion, poha-jalebi brings people together, reflecting the warmth and hospitality of the region. Its simplicity, affordability, and unforgettable taste make it truly. <br><br>
       मध्य प्रदेश की बोली में पोहा-जलेबी की खास बात
-"अरे भिया, इंदौर आके पोहा-जलेबी ना खाए, तो का खाए! ई तो हमरे यहां के सवेरे की शान है। गरमागरम पोहा ऊपर से हरी धनिया, नींबू अउर सेव, संग में मीठी कुरकुरी जलेबी—मुँह में घुल जाए। चाय की चुस्की के साथ जब ये नाश्ता मिल जाए, समझो दिन बन गया।
+"अरे भिया, इंदौर,दमोह ,जबलपुर आके पोहा-जलेबी ना खाए, तो का खाए! ई तो हमरे यहां के सवेरे की शान है। गरमागरम पोहा ऊपर से हरी धनिया, नींबू अउर सेव, संग में मीठी कुरकुरी जलेबी—मुँह में घुल जाए। चाय की चुस्की के साथ जब ये नाश्ता मिल जाए, समझो दिन बन गया।
 
 हमरे इंदौर, उज्जैन, भोपाल में तो हर नुक्कड़ पे पोहा-जलेबी की खुशबू बसी है। चाहे त्योहार हो या कोई खास मौका, पोहा-जलेबी बिना मजा अधूरा। इहाँ के लोग कहें—'पोहा-जलेबी खाओ, दिल से मुस्काओ!'"
         </p>
 
-    </div> <br>
+    </div>
+    </div>
+    <br>
     <div id="bafla">
-        <img id="dal" src="bafla.jpeg" alt="bafla" width="330" height="230">
-       <P style="margin-right: 26%; margin-top: -250px; "> <b><u>Dal Bafla:-</u></b> The Heart of Madhya Pradesh Cuisine
+       
+      <div style="padding: 10px;"> 
+      <p> <b><u>Dal Bafla:-</u></b> The Heart of Madhya Pradesh Cuisine
 Dal Bafla is a traditional and much-loved delicacy from Madhya Pradesh, often considered a culinary symbol of the region. This dish is a testament to the state’s rich food culture, blending rustic flavors with wholesome nutrition. Dal Bafla consists of two main components: “bafla,” a type of wheat flour dumpling, and “dal,” a spiced lentil preparation.
 
 The Making of Bafla
@@ -130,13 +158,25 @@ The dal served with bafla is typically made from yellow split pigeon peas (toor 
 
 Serving Style and Tradition
 Dal Bafla is traditionally served with generous dollops of ghee poured over the hot baflas, enhancing their flavor and richness. It is often accompanied by a tangy coriander chutney, spicy pickles, and sometimes a sweet dessert like laddoo, making it a complete meal. The dish is especially popular during festivals, weddings, and special gatherings, reflecting the region’s hospitality and love for robust flavors.</P>
-    </div><br><br>
-     <div id="khorma">
-        <img id="patties" src="khorma.jpeg" alt="poha" width="250" >
-        <p style="margin-left: 20%; margin-top: -260px; "><b><u>Indori Khopra:-</u></b>Indori Khopra Patties are a famous and beloved street food from Indore, Madhya Pradesh, known for their unique combination of crispy texture and flavorful stuffing. The word "Khopra" means dried coconut in Hindi, and these patties are essentially deep-fried potato croquettes stuffed with a delicious mixture of grated coconut, spices, nuts, and dried fruits. This blend gives the patties a perfect balance of sweet, spicy, and tangy flavors.<br>
+    </div>
+     <div style="padding: 25px;">
+        <img style=" border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;" src="bafla.jpeg" alt="bafla" width="430px" height="230px">
+      </div>
+    </div>
+    <br>
+    <div id="khorma">
+    
+        <div style="display: flex;align-items: flex-start;"><img style=" border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;  padding: 15px;" src="khorma.jpeg" alt="poha" width="400" ></div>
+         <div style="padding: 15px;">
+        <p><b><u>Indori Khopra:-</u></b>Indori Khopra Patties are a famous and beloved street food from Indore, Madhya Pradesh, known for their unique combination of crispy texture and flavorful stuffing. The word "Khopra" means dried coconut in Hindi, and these patties are essentially deep-fried potato croquettes stuffed with a delicious mixture of grated coconut, spices, nuts, and dried fruits. This blend gives the patties a perfect balance of sweet, spicy, and tangy flavors.<br>
 
 The preparation starts with boiling and mashing potatoes, which are then mixed with corn flour (or arrowroot flour during fasting) and seasoning to form a smooth dough. The stuffing is made by combining grated coconut with chopped cashews, raisins, green chili, ginger, coriander, lemon juice, sugar, and various spices like black pepper and red chili powder. This stuffing is placed inside flattened portions of the potato dough, which are carefully sealed and shaped into round patties.<br>
 
-Before frying, the patties are refrigerated for about 20 minutes to help them hold their shape and avoid breaking in the hot oil. They are then deep-fried until golden brown and crispy on the outside, while remaining soft and flavorful inside. Indori Khopra Patties are traditionally served hot with green chutney and tamarind chutney, which add freshness and tanginess to the dish.
+Before frying, the patties are refrigerated for about 20 minutes to help them hold their shape and avoid breaking in the hot oil. They are then deep-fried until golden brown and crispy on the outside, while remaining soft and flavorful inside. Indori Khopra Patties are traditionally served hot with green chutney and tamarind chutney, which add freshness and tanginess to the dish.</p>
+
+</div>
+</div>
 </body>
 </html>
